@@ -57,19 +57,16 @@
 /* content-art */
 #content {
     padding-top: 50px;
-    height: 200vh;
+    height: 277vh;
     background: url(../img/Homepage.jpg) no-repeat;
-    color: #fff;
-}
-
-#content h1 {
+    width: 100%;
     color: #000;
 }
 
 #content #vr-content .vr{
     background-color: #42FF00;
-    width: 50%;
-    height: 200px;
+    width: 60%;
+    height: 300px;
     border-radius: 10px;
     border: 3px solid #000;
 }
@@ -85,8 +82,12 @@
     width: 100px;
 }
 
-#content #vr-content .maps {
+/* #content #vr-content .maps {
     margin: -20px 0 0;
+} */
+
+#content #content-art {
+    padding-top: 50px;
 }
 
 #content .shadow-effect {
@@ -104,6 +105,7 @@
     line-height: 1.5;
     margin: 0 0 17px 0;
     font-weight: 300;
+    color: #fff;
 }
 
 #content .location {
@@ -174,4 +176,43 @@
 #category .card {
     background: #000;
     width: 200px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 750px) {
+    #category .d-flex{
+        display: flex;
+    }
+
+    #category .row {
+        justify-content: center;
+    }
+
+    #content {
+        height: 465vh;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+/* contact */
+#content #contact {
+    background-color: #000;
+}
+
+#content #contact h1 {
+    color: #fff;
+}
+
+#content #contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer */
+footer p {
+    font-size: 12px;
+    color: #000;
 }
